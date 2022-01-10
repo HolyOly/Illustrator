@@ -34,7 +34,14 @@
         font-family: "Roboto-Italic";  
         src: url(fonts/Roboto-Italic.ttf) format("truetype"); 
     }
-        
+    .body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        margin: 0 auto;
+    }
     .header {
         background-color: #008DAA;
         height: 4rem;
@@ -42,9 +49,12 @@
         box-shadow: 4px 15px 10px 0px rgba(34, 60, 80, 0.2);
         -webkit-box-shadow: 4px 15px 10px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 15px 10px 0px rgba(34, 60, 80, 0.2);
-        box-shadow: 4px 15px 10px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 15px 10px 0px rgba(34, 60, 80, 0.2); 
     }
     .reference {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
         color: #d4d0c8;
         align-content: center;
         font-family: "Roboto-Regular"; 
@@ -53,6 +63,12 @@
         color: white;
         align-content: center;
         font-family: "Roboto-Regular"; 
+    }
+    .nav-logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        align-content: center;
     }
     .logo1 {
         width: 1.5rem;
@@ -72,21 +88,19 @@
         vertical-align: middle;
     }
     .nav {
+        margin-left: 3rem;
+        text-align: center;
         font-size: small;
         font-family: "Roboto-Regular"; 
     }
     .nav-link {
-        color: #149fbb;
+        margin: 0 auto;
+        text-align: center;
+        color: #06BAC5;
     }
     .nav-link:hover {
         color: #eb477b;
         cursor: pointer;
-    }
-    ul {
-        color: #06BAC5;
-    }
-    .nav-link {
-        color: #06BAC5;
     }
     .d1 {
         width: 5px; 
@@ -100,24 +114,36 @@
         color: #005c7d;
         padding-top: 3rem;
     }
+    /* .pic-bg {
+        background-image: url("img/design-2461957_1920.png") no-repeat;
+        width: 25%;
+    } */
     .text {
         text-align: center;
         font-family: "Philosopher-Regular"; 
+    }
+    .content-center {
+        text-align: center;
     }
     .text1 {
         font-family: "Philosopher-Regular"; 
         color: #005c7d;
         margin-top: 1rem;
+        z-index: 3;
     }
     .text2 {
-        margin-left: 6rem;
+        z-index: 3;
         margin-top: 5rem;
         color: #005c7d;
         font-family: "Roboto-Medium";
     }
     .btn-1 {
-        display: block;
-        margin-left: 14rem;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        text-align: center;
+        z-index: 3;
+        display: inline;
         margin-top: 3rem;
         color: white;
         background-color: #005c7d;
@@ -127,16 +153,9 @@
         font-family: "Roboto-Regular";
     }
     .btn-1:hover {
-        display: block;
-        margin-left: 14rem;
-        margin-top: 3rem;
-        color: white;
+        
         background-color: #eb477b;
-        padding: .3em 1em;
-        border: none;
-        border-radius: 100px;
-        font-family: "Roboto-Regular";
-        cursor: pointer;
+
     }
     .cont2 {
         background-color: #EEEEED;
@@ -174,14 +193,17 @@
         font-family: "Roboto-Regular";
         color: #005c7d;
     }
+    .card {
+        margin: 0 auto;
+        display: block;
+    }
     .card-img-top {
         width: 6rem;
     }
     .card1 {
-        align-items: center;
+        text-align: center;
         background-color: #EEEEED;
         border: none;
-        margin-left: 2.5rem;
         padding-bottom: 6rem;
     }
     .card-body {
@@ -208,16 +230,22 @@
     }
     .list-group {
         margin-top: 1.5rem;
-        margin-left: -1rem;
+        /* margin-left: -1rem; */
         margin-bottom: 6rem;
+        text-align: center;
 
     }
     .list-group-item {
+        display: inline;
         background-color: #ddd9d2;
+        text-align: left;
         border: none;
         color: #005c7d;
         font-family: "Roboto-Regular";
-        font-size: 20px;
+        font-size: 1.5em;
+    }
+    .p-4 {
+        display: inline;
     }
     
     .bi .bi-check-circle {
@@ -294,6 +322,7 @@
         text-align: center;
         color: #008DAA;
     }
+
     .carousel-text {
         font-family: "Roboto-Italic";  
         color: #005c7d;
@@ -301,6 +330,7 @@
         text-align: center;
     }
     .picture2 {
+        z-index: 1;
         max-width: 600px;
         width: 100%;
         display: block;
@@ -326,7 +356,7 @@
     .fa-chevron-circle-left {
         color: #d8d2c4;
         margin-bottom: 9rem;
-        margin-left: -9rem;
+        /* margin-left: -9rem; */
         font-size: 2rem;
         border: 4px solid #b3aea3;
         border-radius: 50%;
@@ -336,7 +366,7 @@
     .fa-chevron-circle-right {
         color: #d8d2c4;
         margin-bottom: 9rem;
-        margin-right: -9rem;
+        /* margin-right: -9rem; */
         font-size: 2rem;
         border: 4px solid #b3aea3;
         border-radius: 50%;
